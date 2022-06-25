@@ -5,6 +5,7 @@ const PORT = 3002 ;
 
 app.use("/api", api)
 app.get("/", (req, res) => {
+    console.log(req.body)
     res.json({
         meassage: "Welcome to home page"
     })
