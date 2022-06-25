@@ -8,8 +8,10 @@ router.get("/", (req,res)=>{
     res.json({
         message : "Welcome to API"
     })
-})
+});
 
-router.use("/itmes", items);
+router.use("/items", items);
+
+
 
 module.exports = router ;
