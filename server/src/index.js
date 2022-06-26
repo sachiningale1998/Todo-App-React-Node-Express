@@ -3,7 +3,8 @@ const api = require('./api')
 const app = express();
 const PORT = 3002 ;
 
-app.use("/api", api)
+app.use("/api", api);
+
 app.get("/", (req, res) => {
     console.log(req.body)
     res.json({
