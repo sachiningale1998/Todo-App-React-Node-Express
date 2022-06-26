@@ -10,6 +10,10 @@ router.get("/", (req,res)=>{
     })
 });
 
+router.post("/todo/new", (req, res) => {
+    console.log(req.body)
+ })
+
 router.use("/items", items);
 
 

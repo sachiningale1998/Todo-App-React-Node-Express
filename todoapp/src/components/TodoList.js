@@ -17,8 +17,12 @@ const TodoList = ()=>{
         return <div>Loading...</div>
     }
 
+    const handleSubmit=()=>{
+        axios.post('')
+    }
+
     return (
-        <div>
+        <div style={{display:'block',margin:'0 40%'}}>
             {
                 items.map((item)=>{
                     return (
@@ -26,6 +30,11 @@ const TodoList = ()=>{
                     )
                 })
             }
+            <br/>
+            <form onSubmit={handleSubmit} >
+                <input placeholder="Enter task" />
+                <input type="submit" value="Add Todo" />
+            </form>
         </div>
     )
 }
