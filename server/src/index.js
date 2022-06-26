@@ -11,11 +11,6 @@ app.get("/", (req, res) => {
     })
 })
 
-// app.get("/DMSans-Regular.ttf", (req, res) => {
-//     res.json({
-//         message: "nothing"
-//     })
-// })
 
 app.listen(PORT, (req, res) => {
     console.log(`Listening to http://localhost:${PORT}`);
