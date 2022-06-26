@@ -7,7 +7,7 @@ app.use("/api", api)
 app.get("/", (req, res) => {
     console.log(req.body)
     res.json({
-        meassage: "Welcome to home page"
+        message: "Welcome to home page"
     })
 })
 
